@@ -1,0 +1,36 @@
+Wolne notatki - nie do pokazywania
+
+Prezentacja 10 min
+
+1. Czego dotyczy zbiór
+- Zbiór jest zapisem pewnych transmisji / komunikacji między klientem a serwerem.
+Posiada on 12 cech, które opisują m.in użyte porty, liczbę pakietów czy liczbę bajtów przesłanych w ramach tej komunikacji.
+
+2. Jaki jest problem zbioru
+- Istnieje kolumna action, która posiada informację o akcji jaką podjął firewall w ramach danej komunikacji.
+Akcje które są do przewidzenia to: Allow, Drop, Action, Reset-Both
+
+3. Ile jest atrybutów
+- 12 atrybutów z czego 11 liczbowych i 1 tekstowy (to ta akcja)
+
+4. Jakie są atrybuty
+- W notatniku przedstawione
+
+5. Jakie są problemy z tym zbiorem danych
+- W zbiorze nie występują wartości niezdefiniowane (brak dziur), lecz wartości prawie w każdej kolumnie nie są równo rozłożone.
+Wiele kolumn wymaga dyskretyzacji lub wstępnego przetworzenia - nadania logarytmu na wejście lub innej funkcji.
+
+6. Algorytm t-SNE
+
+7. Wywiad internetowy
+- Ktoś to robił na tym samym zbiorze:
+https://www.kaggle.com/code/salamatoto/internet-firewall-data-data-s-set
+https://github.com/semnan-university-ai/Internet-Firewall
+
+Co im wyszło:
+To wszystko bez preprocessing-u
+- DecisionTreeClassifier accuracy: 90%
+- GaussianNB (naiwny klasyfikator bayes-a): 43%
+- LogisticRegression: 57%
+- KNeighborsClassifier: 89%
+- MLPClassifier: ?
