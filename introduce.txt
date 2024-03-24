@@ -34,3 +34,5 @@ To wszystko bez preprocessing-u
 - LogisticRegression: 57%
 - KNeighborsClassifier: 89%
 - MLPClassifier: ?
+
+metody uczenia niezbalansowanego

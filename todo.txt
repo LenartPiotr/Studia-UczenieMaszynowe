@@ -1,0 +1,5 @@
+preprocessing
+dane odstające
+redukcja wymiarów
+- pca?
+kategoryczne - podział
